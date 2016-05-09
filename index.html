@@ -17,8 +17,8 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="css/default.css" />
-		<link rel="stylesheet" href="css/component.css" />
+		<!-- <link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/component.css" /> -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -35,46 +35,54 @@
                 </div>
             </div>
         </div>
-		<div id="cbp-fbscroller" class="cbp-fbscroller">
-			<nav id="menu-fixed" class="hidden-xs" style="display: block;">
-                    <a href="#fbsection1" class="cbp-fbcurrent" id="menu-first" title="What?" data-toggle="tooltip" data-placement="right" title="What?"><img src="img/menu1.png" alt=""></a>
-                    <a href="#fbsection2" title="The Invitation" data-toggle="tooltip" data-placement="right" title="The Invitation"><img src="img/menu2.png" alt=""></a>
-                    <a href="#fbsection3" title="The Location" data-toggle="tooltip" data-placement="right" title="The Location"><img src="img/menu3.png" alt=""></a>
-                    <a href="#fbsection4" title="Date and Time" data-toggle="tooltip" data-placement="right" title="Date & Time"><img src="img/menu4.png" alt=""></a>
-                    <a href="#fbsection5" title="What to wear" data-toggle="tooltip" data-placement="right" title="Theme & Attire"><img src="img/menu5.png" alt=""></a>
-                    <a href="#fbsection6" title="Gifts?" data-toggle="tooltip" data-placement="right" title="Gifts to bring?" ><img src="img/menu6.png" alt=""></a>
-                    <a href="#fbsection7" title="RSVP" data-toggle="tooltip" data-placement="right" title="RSVP Now!?"><img src="img/menu7.png" alt=""></a>
-                    <a href="#fbsection8" title="The Sponsors and Entourage" title="Sponsors & Entourage" data-toggle="tooltip" data-placement="right"><img src="img/menu8.png" alt=""></a>
-                </nav>
 
-		<section id="fbsection1" class="hero-section">
+		<nav id="menu-fixed" class="hidden-xs" style="display: block;">
+                    <a href="#hero-section" class="cbp-fbcurrent" id="menu-first" title="What?" data-toggle="tooltip" data-placement="right" title="What?"><img src="img/menu1.png" alt=""></a>
+
+                    <a href="#invite-section" title="The Invitation" data-toggle="tooltip" data-placement="right" title="The Invitation"><img src="img/menu2.png" alt=""></a>
+
+                    <!-- <a href="#fbsection3" title="The Location" data-toggle="tooltip" data-placement="right" title="The Location"><img src="img/menu3.png" alt=""></a> -->
+
+                    <a href="#time-section" title="Date and Time" data-toggle="tooltip" data-placement="right" title="Date & Time"><img src="img/menu4.png" alt=""></a>
+
+                    <a href="#attire-section" title="What to wear" data-toggle="tooltip" data-placement="right" title="Theme & Attire"><img src="img/menu5.png" alt=""></a>
+
+                    <a href="#gift-section" title="Gifts?" data-toggle="tooltip" data-placement="right" title="Gifts to bring?" ><img src="img/menu6.png" alt=""></a>
+
+                    <a href="#rsvp-section" title="RSVP" data-toggle="tooltip" data-placement="right" title="RSVP Now!?"><img src="img/menu7.png" alt=""></a>
+
+                    <a href="#sponsors-section" title="The Sponsors and Entourage" title="Sponsors & Entourage" data-toggle="tooltip" data-placement="right"><img src="img/menu8.png" alt=""></a>
+        </nav>
+		
+		<!-- Hero Section -->
+		<section class="hero-section" id="hero-section">
 	      <div class="container auto-960">
-	        <div class="row v-center-2">
+	        <div class="row">
 	          <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 	            <img class="hero-logo img-responsive" src="img/logo.svg" alt="Francis & May : Pabebe Forever">
 	          </div>
 	        </div>
 	      </div>
-		      <div class="text-center">
-		      	<img class="ico-arrow" src="img/ico-arrow.svg" alt="">
-		      </div>
-	      	<div class="message-bar text-center">
-		      	<div class="container">
-		      		<div class="row">
-		      			<div class="col-xs-12">
-	      				<img class="ico ico-message" src="img/ico-message.svg" alt="">
-				        <p class="mt10">
-				          <script type="text/javascript">document.write(getMessage());</script> We have a message for you. Scroll down before it expires!
-				        </p>
-		      			</div>
-		      		</div>
-		      	</div>
-			</div>
 	    </section>
 
-		<section id="fbsection2" class="invite-section">
+	    <!-- Messsage Bar -->
+    	<div class="message-bar text-center">
+	      	<div class="container">
+	      		<div class="row">
+	      			<div class="col-xs-12">
+      				<img class="ico ico-message" src="img/ico-message.svg" alt="">
+			        <p class="mt10">
+			          <script type="text/javascript">document.write(getMessage());</script> We have a message for you. Scroll down before it expires!
+			        </p>
+	      			</div>
+	      		</div>
+	      	</div>
+		</div>
+		
+		<!-- Invite Section -->
+		<section class="invite-section" id="invite-section">
 			<div class="container auto-960">
-				<div class="row v-center">
+				<div class="row">
 					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 	            		<img class="heading img-responsive" src="img/h1-invitation.svg" alt="Oh, Hi There!">
 	            		<p class="text-center">
@@ -96,9 +104,10 @@
 			</div>
 		</section>
 
-		<section id="fbsection3" class="time-section">
+		<!-- Date & Time Section -->
+		<section class="time-section" id="time-section">
 			<div class="container auto-960">
-				<div class="row v-center">
+				<div class="row">
 		          <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
 		            <img class="img-responsive mh250" src="img/h1-time.svg" alt="">
 		          </div>
@@ -112,23 +121,25 @@
 		        </div>
 			</div>
 		</section>
-
-		<section id="fbsection4" class="venue-section">
+		
+		<!-- Venue Section -->
+		<section class="venue-section" id="venue-section">
 			<!-- <img src="img/map.jpg" class="img-responsive" alt=""> -->
 			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7850.222352860809!2d123.90095939599175!3d10.332987170348508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33a999269b2146d5%3A0x462d30e860ab63f2!2sSt.+Therese+Church%2C+Cebu+City%2C+Central+Visayas!3m2!1d10.3297817!2d123.89901649999999!4m5!1s0x33a998e0b0f88a03%3A0xaf16baa9b1776270!2sMontebello+Villa+Hotel+Cebu%2C+Gov.+M.+Cuenco+Avenue%2C+Cebu+City%2C+Central+Visayas!3m2!1d10.338740999999999!2d123.909043!5e0!3m2!1sen!2sph!4v1462716422722" width="80%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 		</section>
-
-		<section id="fbsection5" class="attire-section">
+		
+		<!-- Attire Section -->
+		<section class="attire-section" id="attire-section">
 			<div class="container auto-960">
 				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center mb40">
+					<div class="col-xxs-6 col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center mb40">
 						<img class="mh80 mb20" src="img/h2-theme.svg" alt="">
 						<p>
 							Bohemian <br>
 							Rustic
 						</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center mb40">
+					<div class="col-xxs-6 col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center mb40">
 						<img class="mh80 mb20" src="img/h2-entourage.svg" alt="">
 						<p>
 							Off-white
@@ -138,7 +149,7 @@
 						<div class="swatch swatch-white3"></div>
 						<div class="swatch swatch-white4"></div>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center mb40">
+					<div class="col-xxs-6 col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center mb40">
 						<img class="mh80 mb20" src="img/h2-guests.svg" alt="">
 						<p>
 							Casual / Pastel
@@ -156,12 +167,12 @@
 					</div>
 				</div>
 			</div>
-			
 		</section>
-			
-		<section id="fbsection6" class="gift-section">
+		
+		<!-- Gifts Section -->
+		<section class="gift-section" id="gift-section">
 			<div class="container auto-960">
-				<div class="row v-center">
+				<div class="row">
 					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 	            		<img class="heading img-responsive" src="img/h1-gift.svg" alt="Oh, Hi There!">
 	            		<p class="text-center">
@@ -173,9 +184,10 @@
 			</div>
 		</section>
 
-		<section id="fbsection7" class="rsvp-section">
+		<!-- RSVP Section -->
+		<section class="rsvp-section" id="rsvp-section">
 			<div class="container auto-960">
-				<div class="row v-center">
+				<div class="row">
 					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 	            		<img class="heading img-responsive" src="img/h1-rsvp.svg" alt="Oh, Hi There!">
 	            		<p class="text-center">
@@ -186,8 +198,9 @@
 				</div>
 			</div>
 		</section>
-
-		<section id="fbsection8" class="sponsors-section">
+		
+		<!-- Sponsors Section -->
+		<section class="sponsors-section" id="sponsors-section">
 			<div class="container auto-960">
 				<div class="row">
 					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
@@ -301,29 +314,28 @@
 			</div>
 		</section>
 
-		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
-
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="js/jquery.easing.min.js"></script>
-		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
-		<script src="js/waypoints.min.js"></script>
-		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
-		<script src="js/jquery.debouncedresize.js"></script>
-		<script src="js/cbpFixedScrollLayout.min.js"></script>
 		<script>
-			$(function() {
-				cbpFixedScrollLayout.init();
-			});
 			$('#menu-first').tooltip();
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html, body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
 		</script>
 	</body>
 </html>

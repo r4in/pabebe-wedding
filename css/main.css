@@ -22,8 +22,8 @@
 }
 
 section{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 9em;
+    padding-bottom: 9em;
 }
 
 body{
@@ -148,24 +148,6 @@ h3{
   margin-bottom: 40px;
 }
 
-.v-center{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.v-center-3{
-  position: relative;
-  top: 40%;
-  transform: translateY(-60%);
-}
-
-.v-center-2{
-  position: relative;
-  top: 45%;
-  transform: translateY(-55%);
-}
-
 /*MAIN CSS*/
 .hero-section{
 	background: url('../img/bg-hero.jpg') center;
@@ -175,9 +157,6 @@ h3{
 .message-bar{
 	background-color: #1d1d1d;
 	padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .mh80{
@@ -235,7 +214,6 @@ h3{
 .invite-section{
   background: url('../img/bg-invite.jpg') center;
   background-size: cover;
-  max-height: 600px;
 }
 
 .rsvp-section{
@@ -253,24 +231,11 @@ h3{
   background-size: cover;
 }
 
-.sponsors-section{
-  padding-top: 100px;
-}
-
-.invite-section .h{
-  max-height: 150px;
-}
-
 .venue-section{
   background: url('../img/map.jpg') center;
   background-size: cover;
   padding: 0;
 }
-
-/*footer{
-  height: 100px;
-  background-color: #000000;
-}*/
 
 .heading{
   max-height: 80px;
@@ -317,7 +282,8 @@ h3{
 #menu-fixed {
   width: 47px;
   background: #000;
-  display: none;
+  display: block;
+  position: absolute;
 }
 
 #menu-fixed img {
@@ -476,7 +442,9 @@ h3{
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+  .col-xxs-6{
+      width: 50%;
+  }
 }
 
 /* Custom, iPhone Retina */ 
