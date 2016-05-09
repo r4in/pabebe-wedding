@@ -73,7 +73,7 @@ h3{
     position: absolute;
     left: 50%;
     margin-left: -20px;
-    top: -60px;
+    top: -80px;
 }
 
 .ico-arrow{
@@ -138,6 +138,10 @@ h3{
 
 .mt20{
   margin-top: 20px;
+}
+
+.mt30{
+  margin-top: 30px;
 }
 
 .mt60{
@@ -250,6 +254,7 @@ h3{
 .attire-section{
   background: url('../img/bg-attire.jpg') center;
   background-size: cover;
+  padding: 6em 0;
 }
 
 .sponsors-section{
@@ -455,6 +460,10 @@ h3{
   }
   .col-xxs-offset-0{
     margin-left: 0;
+  }
+
+  .attire-section .foo{
+    margin-bottom: 40px;
   }
 }
 
