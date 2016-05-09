@@ -40,6 +40,10 @@ p{
   color: #ffae20;
 }
 
+.yellow:hover, .yellow:active, .yellow:focus{
+  color: #FFB93E;
+}
+
 .ico{
 	height: 42px;
 	width: auto;
@@ -310,6 +314,17 @@ h3{
     top: 0;
     left: 0;
     z-index: 9999;
+}
+
+
+footer{
+    background-color: black;
+    padding: 3em 0;    
+}
+footer p{
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
 }
 
 /*ANIMATION + EFFECTS*/

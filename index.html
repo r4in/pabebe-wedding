@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>May & Francis - Pabebe Forever After</title>        
+        <title>May & Francis - The Wedding! #PabebeForeverAfter</title>        
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Open Graph -->
-        <meta property="og:image" content="http://2014.geeksonabeach.com/img/og-image.png">
-        <meta property="og:title" content="Geeks On A Beach 2014">
-        <meta property="og:description" content="The inaugural event last year brought together key people from around the world - investors met founders, newly-formed friendships blossomed into new startups">
-        <meta property="og:url" content="http://2014.geeksonabeach.com/">
+        <meta property="og:image" content="img/og-image.jpg">
+        <meta property="og:title" content="May & Francis - The Wedding! #PabebeForeverAfter">
+        <meta property="og:description" content="This is it, we're getting married! And we'd like you to be there to celebrate with us on this awesome celebration :)">
+        <meta property="og:url" content="http://www.mayandfrancis.com/">
 
 		<!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -23,6 +23,85 @@
         <link rel="stylesheet" href="css/main.css">
 
 		<script src="js/modernizr.custom.js"></script>
+
+		<script type="text/javascript">
+
+
+        codes = {
+        	// family
+            "trixie": {
+                "message": "Gen. Noob!",
+            },
+            "bruce": {
+                "message": "Baby Bruce!",
+            },
+            "angel": {
+                "message": "Hey Waterbuffalo!",
+            },
+            "apple": {
+                "message": "Ate Apple!",
+            },
+            "xtian": {
+                "message": "Kuya!",
+            },
+            "kevin": {
+                "message": "Knive Everdope!",
+            },
+            "kuyapaul": {
+                "message": "Hoyhoy Poloy!",
+            },
+            "ram": {
+                "message": "Yo Bigram!",
+            },
+            //barkada
+            "kenny": {
+                "message": "Hoy Pisot! :)",
+            },
+            "klin": {
+                "message": "Hi Klin! :)",
+            },
+            "paul": {
+                "message": "Yo bro!",
+            },
+            "frtiz": {
+                "message": "Yo chok!",
+            },
+            "laurie": {
+                "message": "Lord Laurie!",
+            },
+            "nico": {
+                "message": "Yo Nix!",
+            },
+
+        }
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        function getMessage(){
+            if(typeof(codes[getParameterByName('dear')]) == 'undefined'){
+                return "Hi Friend!"
+            }
+            else {
+                return codes[getParameterByName('dear')]["message"];
+            }
+        }
+
+        function getRole(){
+            if(typeof(codes[getParameterByName('dear')]) == 'undefined'){
+                return ""
+            }
+            else {
+                return '<h5 class="role">' + codes[getParameterByName('dear')]["role"] + '</h5>';
+            }
+        }
+
+        </script>
+
 	</head>
 	<body>
 		<div id="menu-wrap" class="hidden-xs">
@@ -43,15 +122,15 @@
 
             <!-- <a href="#fbsection3" title="The Location" data-toggle="tooltip" data-placement="right" title="The Location"><img src="img/menu3.png" alt=""></a> -->
 
-            <a href="#time-section" title="Date and Time" data-toggle="tooltip" data-placement="right" title="Date & Time"><img src="img/menu4.png" alt=""></a>
+            <a href="#time-section" title="Date & Venue" data-toggle="tooltip" data-placement="right" title="Date & Time"><img src="img/menu4.png" alt=""></a>
 
-            <a href="#attire-section" title="What to wear" data-toggle="tooltip" data-placement="right" title="Theme & Attire"><img src="img/menu5.png" alt=""></a>
+            <a href="#attire-section" title="Event Attire" data-toggle="tooltip" data-placement="right" title="Theme & Attire"><img src="img/menu5.png" alt=""></a>
 
-            <a href="#gift-section" title="Gifts?" data-toggle="tooltip" data-placement="right" title="Gifts to bring?" ><img src="img/menu6.png" alt=""></a>
+            <a href="#gift-section" title="Wedding Gifts" data-toggle="tooltip" data-placement="right" title="Gifts to bring?" ><img src="img/menu6.png" alt=""></a>
 
             <a href="#rsvp-section" title="RSVP" data-toggle="tooltip" data-placement="right" title="RSVP Now!?"><img src="img/menu7.png" alt=""></a>
 
-            <a href="#sponsors-section" title="The Sponsors and Entourage" title="Sponsors & Entourage" data-toggle="tooltip" data-placement="right"><img src="img/menu8.png" alt=""></a>
+            <a href="#sponsors-section" title="The Entourage" title="Sponsors & Entourage" data-toggle="tooltip" data-placement="right"><img src="img/menu8.png" alt=""></a>
         </nav>
 		
 		<!-- Hero Section -->
@@ -72,7 +151,7 @@
 	      			<div class="col-xs-12">
       				<img class="ico ico-message" src="img/ico-message.svg" alt="">
 			        <p class="mt10">
-			          <script type="text/javascript">document.write(getMessage());</script> We have a message for you. Scroll down before it expires!
+			          <span class="yellow"><script type="text/javascript">document.write(getMessage());</script></span> We have a message for you. Scroll down before it expires!
 			        </p>
 	      			</div>
 	      		</div>
@@ -152,7 +231,7 @@
 					<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center foo">
 						<img class="mh80 mb20" src="img/h2-guests.svg" alt="">
 						<p>
-							Casual / Pastel
+							Bohemian / Pastel
 						</p>
 						<div class="swatch swatch-red"></div>
 						<div class="swatch swatch-yellow"></div>
@@ -217,23 +296,32 @@
 					</div>
 					<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<p class="text-center">
-							Mrs. & Mr. Hugo Desabille <br>
-							Mrs. &  Engr. Rey Raffiñan <br>
-							Mrs. & Mr. Jessie Deala <br>
+							Mr. Hugo Desabille <br>
+							Mrs. Ismaelita Desabille <br>
+							Engr. Rey Raffiñan <br>
+							Mrs. Giovanna Raffiñan <br>
+							Mr. Jessie Deala <br>
+							Mrs. Lea P. Deala <br>
 						</p>
 					</div>
 					<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<p class="text-center">
-							Engr. & Mr. Erwin Budomo <br>
-							Mrs. & Engr. Airen Balderas <br>
-							Mrs. & Mr. Recto Solon <br>
+							Engr. Nila Razon Budomo <br>
+							Mr. Erwin Budomo <br>
+							Engr. Airen Balderas <br>
+							Mrs. Ma. Venus Balderas <br>
+							Mr. Recto Solon <br>
+							Mrs. Closyl Malazarte Solon
 						</p>
 					</div>
 					<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<p class="text-center">
-							Mrs. & Mr. Dave Overton <br>
-							Mrs. & Mr. Karl Alturas <br>
-							Mrs. & Mr. Bobong Dejaresco <br>
+							Mr. Karl Alturas <br>
+							Mrs. Aura Mae Alturas <br>
+							Mr. Dave Overton <br>
+							Mrs. Hilary Overton <br>
+							Mr. Albert Padin <br>
+							Mrs. Nicole Padin <br>
 						</p>
 					</div>
 				</div>
@@ -322,8 +410,6 @@
 						<p class="text-center">
 							Mr. Kenny Joy Diongzon
 						</p>
-					</div>
-					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 						<h3>
 							<img class="ico-v2" src="img/ico-left.svg" alt="">
 								Groomsmen
@@ -345,11 +431,9 @@
 						<p class="text-center">
 							Ms. Vera Mae Piollo
 						</p>
-					</div>
-					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 						<h3>
 							<img class="ico-v2" src="img/ico-left.svg" alt="">
-								Groomsmen
+								Bridesmaids
 							<img class="ico-v2" src="img/ico-right.svg" alt="">
 						</h3>
 						<p class="text-center">
@@ -364,7 +448,7 @@
 					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 						<h3>
 							<img class="ico-v2" src="img/ico-left.svg" alt="">
-								Bride Parents
+								Bride's Parents
 							<img class="ico-v2" src="img/ico-right.svg" alt="">
 						</h3>
 						<p class="text-center">
@@ -386,6 +470,18 @@
 				</div>
 			</div>
 		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="center-text">
+							For more info about this event, contact me at <span class="yellow">09394346312</span> or shoot an email at <a class="yellow"href="mailto:francis@sym.ph">francis@sym.ph</a> Thanks!
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
