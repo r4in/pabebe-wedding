@@ -78,6 +78,11 @@ h3{
     left: 50%;
     margin-left: -20px;
     top: -80px;
+    opacity: 0.8;
+}
+
+.ico-message:hover,.ico-message:active{
+  opacity: 1;
 }
 
 .ico-arrow{
