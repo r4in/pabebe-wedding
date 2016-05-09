@@ -160,6 +160,7 @@ h3{
 .hero-section{
 	background: url('../img/bg-hero.jpg') center;
 	background-size: cover;
+  padding: 5em 0;
 }
 
 .message-bar{
