@@ -46,7 +46,7 @@ p{
 }
 
 .ico-v2{
-  height: 16px;
+  height: 10px;
   width: auto;
   padding-left: 4px;
   padding-right: 4px;
@@ -61,7 +61,7 @@ p{
 
 h3{
   color: #ffae20;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .ico-message{
@@ -255,6 +255,7 @@ h3{
 .sponsors-section{
   background: url('../img/bg-sponsors.jpg') center;
   background-size: cover;
+  padding: 6em 0;
 }
 
 .sponsors-section p{
@@ -283,7 +284,8 @@ h3{
   width: 47px;
   background: #000;
   display: block;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
 }
 
 #menu-fixed img {
@@ -302,7 +304,7 @@ h3{
     position:  fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
 }
 
 /*ANIMATION + EFFECTS*/
@@ -444,6 +446,15 @@ h3{
 @media only screen and (max-width : 480px) {
   .col-xxs-6{
       width: 50%;
+  }
+  .col-xxs-12{
+      width: 100%;
+  }
+  .hidden-xxs{
+    display: none;
+  }
+  .col-xxs-offset-0{
+    margin-left: 0;
   }
 }
 
