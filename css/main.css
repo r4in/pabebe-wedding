@@ -1,0 +1,463 @@
+/*@FONTFACE*/
+
+@font-face {
+  font-family: 'Bree-Regular';
+  src: url('../fonts/Bree-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Bree-Regular.otf')  format('opentype'),
+       url('../fonts/Bree-Regular.woff') format('woff'), url('../fonts/Bree-Regular.ttf')  format('truetype'), url('../fonts/Bree-Regular.svg#Bree-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Bree-Light';
+  src: url('../fonts/Bree-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/Bree-Light.otf')  format('opentype'),
+       url('../fonts/Bree-Light.woff') format('woff'), url('../fonts/Bree-Light.ttf')  format('truetype'), url('../fonts/Bree-Light.svg#Bree-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  transition: all 0.3s ease;
+}
+
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+body{
+    font-family: 'Bree-Light', sans-serif;
+    color: #fff;
+}
+
+p{
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.ico{
+	height: 42px;
+	width: auto;
+}
+
+.ico-v2{
+  height: 16px;
+  width: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+h3{
+  color: #ffae20;
+  font-size: 21px;
+}
+
+.ico-message{
+    -webkit-animation: jump 0.5s infinite;
+    -moz-animation: jump 1s infinite;
+    -o-animation: jump 1s infinite;
+    -ms-animation: jump 1s infinite;
+    animation: jump 1s infinite;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: -60px;
+}
+
+.ico-arrow{
+    position: relative;
+    top: -50px;
+    height: 60px;
+    width: auto;
+}
+
+.btn{
+    color: #fff;
+    text-align: center;
+    border-radius: 0;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.btn-green{
+    background-color: #93b825;
+    border-bottom: solid 3px #7a991b;
+}
+
+.btn-green:hover{
+    background-color: #A6D126;
+    border-bottom: solid 3px #93b825;
+    color: #fff;
+}
+
+.btn-blue{
+    background-color: #117cb9;
+    border-bottom: solid 3px #076092;
+    color: #fff;
+}
+
+.btn-blue:hover{
+    background-color: #1D90D1;
+    border-bottom: solid 3px #117cb9;
+    color: #fff;
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 30px 30px 30px;
+	border-color: transparent transparent #1d1d1d transparent;
+}
+
+.mh250{
+  max-height: 250px;
+}
+
+/*CUSTOM HELPER CLASS*/
+.auto-960{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.mt10{
+  margin-top: 10px;
+}
+
+.mt20{
+  margin-top: 20px;
+}
+
+.mt60{
+  margin-top: 60px;
+}
+
+.mb40{
+  margin-bottom: 40px;
+}
+
+.v-center{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.v-center-3{
+  position: relative;
+  top: 40%;
+  transform: translateY(-60%);
+}
+
+.v-center-2{
+  position: relative;
+  top: 45%;
+  transform: translateY(-55%);
+}
+
+/*MAIN CSS*/
+.hero-section{
+	background: url('../img/bg-hero.jpg') center;
+	background-size: cover;
+}
+
+.message-bar{
+	background-color: #1d1d1d;
+	padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.mh80{
+  max-height: 80px;
+}
+
+.mb20{
+  margin-bottom: 20px;
+}
+
+.swatch{
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 3px;  
+}
+
+.swatch-white{
+  background-color: #ffffff;
+}
+
+.swatch-white2{
+  background-color: #f0e8cf;
+}
+
+.swatch-white3{
+  background-color: #f4f2e3;
+}
+
+.swatch-white4{
+  background-color: #ffd2a2;
+}
+
+.swatch-red{
+  background-color: #ffa3b1;
+}
+
+.swatch-yellow{
+  background-color: #f6e49d;
+}
+
+.swatch-green{
+  background-color: #d3f9bc;
+}
+
+.swatch-blue{
+  background-color: #98d9ea;
+}
+
+.swatch-purple{
+  background-color: #b5a5d4;
+}
+
+.invite-section{
+  background: url('../img/bg-invite.jpg') center;
+  background-size: cover;
+  max-height: 600px;
+}
+
+.rsvp-section{
+  background: url('../img/bg-rsvp.jpg') center;
+  background-size: cover;
+}
+
+.gift-section{
+  background: url('../img/bg-gift.jpg') center;
+  background-size: cover;
+}
+
+.time-section{
+  background: url('../img/bg-time.jpg') center;
+  background-size: cover;
+}
+
+.sponsors-section{
+  padding-top: 100px;
+}
+
+.invite-section .h{
+  max-height: 150px;
+}
+
+.heading{
+  max-height: 80px;
+  margin-bottom: 24px;
+}
+
+.h1-time{
+  width: 100%;
+  height: auto;
+}
+
+.attire-section{
+  background: url('../img/bg-attire.jpg') center;
+  background-size: cover;
+}
+
+.sponsors-section{
+  background: url('../img/bg-sponsors.jpg') center;
+  background-size: cover;
+}
+
+.sponsors-section p{
+  font-size: 15px;
+}
+
+#menu-main a{
+  height: 47px;
+  width: 47px;
+  background: url('../img/menu-tab.png');
+  display: block;
+  text-indent: -9999px;
+  float: left;
+  z-index: 9999;
+}
+
+#menu-music {
+  margin-left: -47px;
+  height: 47px;
+  width: 0px;
+  float: left;
+  display: none;
+}
+
+#menu-fixed {
+  width: 47px;
+  background: #000;
+  display: none;
+}
+
+#menu-fixed img {
+  opacity: 0.5;
+}
+
+#menu-fixed img:hover {
+  opacity: 1;
+}
+
+#menu-first {
+  margin-top: 0;
+}
+
+#menu-wrap {
+    position:  fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/*ANIMATION + EFFECTS*/
+
+@-webkit-keyframes jump {
+    0% {margin-top: 16px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    40% {}
+    50% {margin-top: 18px;
+        -webkit-animation-timing-function: ease-out;
+    }
+    55% {margin-top: 20px;
+        -webkit-animation-timing-function: ease-in;}
+    65% {margin-top: 19px;
+        -webkit-animation-timing-function: ease-out;}
+    95% {
+        margin-top: 18px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    100% {margin-top: 16px;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@-moz-keyframes jump {
+    0% {margin-top: 16px;
+        -moz-animation-timing-function: ease-in;
+    }
+    40% {}
+    50% {margin-top: 18px;
+        -moz-animation-timing-function: ease-out;
+    }
+    55% {margin-top: 20px;
+        -moz-animation-timing-function: ease-in;}
+    65% {margin-top: 19px;
+        -moz-animation-timing-function: ease-out;}
+    95% {
+        margin-top: 18px;
+        -moz-animation-timing-function: ease-in;
+    }
+    100% {margin-top: 16px;
+        -moz-animation-timing-function: ease-in;
+    }
+}
+
+@-o-keyframes jump {
+    0% {margin-top: 16px;
+        -o-animation-timing-function: ease-in;
+    }
+    40% {}
+    50% {margin-top: 18px;
+        -o-animation-timing-function: ease-out;
+    }
+    55% {margin-top: 20px;
+        -o-animation-timing-function: ease-in;}
+    65% {margin-top: 19px;
+        -o-animation-timing-function: ease-out;}
+    95% {
+        margin-top: 18px;
+        -o-animation-timing-function: ease-in;
+    }
+    100% {margin-top: 16px;
+        -o-animation-timing-function: ease-in;
+    }
+}
+
+@-ms-keyframes jump {
+    0% {margin-top: 16px;
+        -ms-animation-timing-function: ease-in;
+    }
+    40% {}
+    50% {margin-top: 18px;
+        -ms-animation-timing-function: ease-out;
+    }
+    55% {margin-top: 20px;
+        -ms-animation-timing-function: ease-in;}
+    65% {margin-top: 19px;
+        -ms-animation-timing-function: ease-out;}
+    95% {
+        margin-top: 18px;
+        -ms-animation-timing-function: ease-in;
+    }
+    100% {margin-top: 16px;
+        -ms-animation-timing-function: ease-in;
+    }
+}
+ 
+@keyframes jump {
+    0% {
+        margin-top: 16px;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        margin-top: 18px;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        tmargin-top: 20px;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        margin-top: 19px;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        margin-top: 18px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        margin-top: 16px;
+        animation-timing-function: ease-in;
+    }
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}

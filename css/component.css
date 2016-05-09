@@ -1,0 +1,69 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%; 
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+/*	position: fixed;
+    z-index: 9999;
+    right: 80px;
+    top: 30%;
+    width: 0px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);*/
+	 position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    margin-top: 47px;
+}
+
+.cbp-fbscroller > nav a {
+/*	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 26px;
+	height: 26px;
+	outline: none;
+	margin: 25px 0;
+	border-radius: 50%;
+	border: 4px solid #fff;*/
+	display: block;
+	position: relative;
+	z-index: 9999;
+	height: 26px;
+	outline: none;
+	margin: 25px 0;
+
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	/*background: rgba(255,255,255,0.6);*/
+	opacity: 1!important;
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	/*background: #fff;*/
+	opacity: 1!important;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
