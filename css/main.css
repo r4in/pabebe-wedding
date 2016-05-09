@@ -48,6 +48,13 @@ p{
   padding-right: 4px;
 }
 
+.ico-v3{
+  height: 16px;
+  width: auto;
+  margin-right: 3px;
+  margin-bottom: 4px;
+}
+
 h3{
   color: #ffae20;
   font-size: 21px;
@@ -249,6 +256,17 @@ h3{
 .invite-section .h{
   max-height: 150px;
 }
+
+.venue-section{
+  background: url('../img/map.jpg') center;
+  background-size: cover;
+  padding: 0;
+}
+
+/*footer{
+  height: 100px;
+  background-color: #000000;
+}*/
 
 .heading{
   max-height: 80px;
