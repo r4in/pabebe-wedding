@@ -105,7 +105,7 @@ h3{
     border-bottom: solid 3px #7a991b;
 }
 
-.btn-green:hover{
+.btn-green:hover, .btn-green:active, .btn-green:focus{
     background-color: #A6D126;
     border-bottom: solid 3px #93b825;
     color: #fff;
@@ -117,7 +117,7 @@ h3{
     color: #fff;
 }
 
-.btn-blue:hover{
+.btn-blue:hover, .btn-blue:active, .btn-blue:focus{
     background-color: #1D90D1;
     border-bottom: solid 3px #117cb9;
     color: #fff;
