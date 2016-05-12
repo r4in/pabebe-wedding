@@ -270,7 +270,7 @@ h3{
 
 .sponsors-section{
   background: url('../img/bg-sponsors.jpg') center;
-  background-size: cover;
+  background-size: contain;
   padding: 6em 0;
 }
 
@@ -487,6 +487,11 @@ footer p{
   .attire-section .foo{
     margin-bottom: 40px;
   }
+/*  .sponsors-section{
+  background: url('../img/pattern-wood.jpg') center;
+  background-size: none;
+  padding: 6em 0;
+  }*/
 }
 
 /* Custom, iPhone Retina */ 
