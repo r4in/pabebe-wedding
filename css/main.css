@@ -264,8 +264,7 @@ h3{
 }
 
 .attire-section{
-  background: url('../img/bg-attire.jpg') center;
-  background-size: cover;
+  background: url('../img/pattern-grass.jpg') repeat;
   padding: 6em 0;
 }
 
