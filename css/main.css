@@ -44,6 +44,16 @@ p{
   color: #FFB93E;
 }
 
+.red{
+  color: #d14233;
+}
+
+.red:hover, .red:active, .red:focus{
+  color: #e74c3c;
+}
+
+
+
 .ico{
 	height: 42px;
 	width: auto;
@@ -121,6 +131,19 @@ h3{
 .btn-blue:hover, .btn-blue:active, .btn-blue:focus{
     background-color: #1D90D1;
     border-bottom: solid 3px #117cb9;
+    color: #fff;
+    outline: none;
+}
+
+.btn-red{
+    background-color: #d14233;
+    border-bottom: solid 3px #076092;
+    color: #fff;
+}
+
+.btn-red:hover, .btn-red:active, .btn-red:focus{
+    background-color: #e74c3c;
+    border-bottom: solid 3px #d14233;
     color: #fff;
     outline: none;
 }
