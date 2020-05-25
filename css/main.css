@@ -22,8 +22,8 @@
 }
 
 section{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 9em;
+    padding-bottom: 9em;
 }
 
 body{
@@ -36,13 +36,31 @@ p{
   line-height: 27px;
 }
 
+.yellow{
+  color: #ffae20;
+}
+
+.yellow:hover, .yellow:active, .yellow:focus{
+  color: #FFB93E;
+}
+
+.red{
+  color: #d14233;
+}
+
+.red:hover, .red:active, .red:focus{
+  color: #e74c3c;
+}
+
+
+
 .ico{
 	height: 42px;
 	width: auto;
 }
 
 .ico-v2{
-  height: 16px;
+  height: 10px;
   width: auto;
   padding-left: 4px;
   padding-right: 4px;
@@ -57,7 +75,7 @@ p{
 
 h3{
   color: #ffae20;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .ico-message{
@@ -69,7 +87,12 @@ h3{
     position: absolute;
     left: 50%;
     margin-left: -20px;
-    top: -60px;
+    top: -80px;
+    opacity: 0.8;
+}
+
+.ico-message:hover,.ico-message:active{
+  opacity: 1;
 }
 
 .ico-arrow{
@@ -92,10 +115,11 @@ h3{
     border-bottom: solid 3px #7a991b;
 }
 
-.btn-green:hover{
+.btn-green:hover, .btn-green:active, .btn-green:focus{
     background-color: #A6D126;
     border-bottom: solid 3px #93b825;
     color: #fff;
+    outline: none;
 }
 
 .btn-blue{
@@ -104,10 +128,24 @@ h3{
     color: #fff;
 }
 
-.btn-blue:hover{
+.btn-blue:hover, .btn-blue:active, .btn-blue:focus{
     background-color: #1D90D1;
     border-bottom: solid 3px #117cb9;
     color: #fff;
+    outline: none;
+}
+
+.btn-red{
+    background-color: #d14233;
+    border-bottom: solid 3px #076092;
+    color: #fff;
+}
+
+.btn-red:hover, .btn-red:active, .btn-red:focus{
+    background-color: #e74c3c;
+    border-bottom: solid 3px #d14233;
+    color: #fff;
+    outline: none;
 }
 
 .triangle{
@@ -136,6 +174,10 @@ h3{
   margin-top: 20px;
 }
 
+.mt30{
+  margin-top: 30px;
+}
+
 .mt60{
   margin-top: 60px;
 }
@@ -144,36 +186,16 @@ h3{
   margin-bottom: 40px;
 }
 
-.v-center{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.v-center-3{
-  position: relative;
-  top: 40%;
-  transform: translateY(-60%);
-}
-
-.v-center-2{
-  position: relative;
-  top: 45%;
-  transform: translateY(-55%);
-}
-
 /*MAIN CSS*/
 .hero-section{
 	background: url('../img/bg-hero.jpg') center;
 	background-size: cover;
+  padding: 5em 0;
 }
 
 .message-bar{
 	background-color: #1d1d1d;
 	padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .mh80{
@@ -231,7 +253,6 @@ h3{
 .invite-section{
   background: url('../img/bg-invite.jpg') center;
   background-size: cover;
-  max-height: 600px;
 }
 
 .rsvp-section{
@@ -249,24 +270,11 @@ h3{
   background-size: cover;
 }
 
-.sponsors-section{
-  padding-top: 100px;
-}
-
-.invite-section .h{
-  max-height: 150px;
-}
-
 .venue-section{
   background: url('../img/map.jpg') center;
   background-size: cover;
   padding: 0;
 }
-
-/*footer{
-  height: 100px;
-  background-color: #000000;
-}*/
 
 .heading{
   max-height: 80px;
@@ -279,13 +287,14 @@ h3{
 }
 
 .attire-section{
-  background: url('../img/bg-attire.jpg') center;
-  background-size: cover;
+  background: url('../img/pattern-grass.jpg') repeat;
+  padding: 6em 0;
 }
 
 .sponsors-section{
   background: url('../img/bg-sponsors.jpg') center;
-  background-size: cover;
+  background-size: contain;
+  padding: 6em 0;
 }
 
 .sponsors-section p{
@@ -313,7 +322,9 @@ h3{
 #menu-fixed {
   width: 47px;
   background: #000;
-  display: none;
+  display: block;
+  position: fixed;
+  z-index: 1;
 }
 
 #menu-fixed img {
@@ -332,7 +343,18 @@ h3{
     position:  fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
+}
+
+
+footer{
+    background-color: black;
+    padding: 3em 0;    
+}
+footer p{
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
 }
 
 /*ANIMATION + EFFECTS*/
@@ -472,7 +494,27 @@ h3{
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+  .col-xxs-6{
+      width: 50%;
+  }
+  .col-xxs-12{
+      width: 100%;
+  }
+  .hidden-xxs{
+    display: none;
+  }
+  .col-xxs-offset-0{
+    margin-left: 0;
+  }
 
+  .attire-section .foo{
+    margin-bottom: 40px;
+  }
+/*  .sponsors-section{
+  background: url('../img/pattern-wood.jpg') center;
+  background-size: none;
+  padding: 6em 0;
+  }*/
 }
 
 /* Custom, iPhone Retina */ 
